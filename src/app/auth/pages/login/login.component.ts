@@ -19,6 +19,9 @@ export class LoginComponent  {
   constructor(private fb: FormBuilder, private router: Router, private authService: AuthService) { }
 
   login(){
+    // this.authService.validateToken()
+    // .subscribe(console.log)
+
     console.log(this.miForm.value);
     const { email, password } = this.miForm.value;
 
